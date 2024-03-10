@@ -7,8 +7,8 @@ export const App = () => {
     const [error, setError] = useState('');
 
     const errorHTML = <div className={styles.error}>{error}</div>;
-    const isValueValid = value.length < 3 ? false : true;
-    const listParagraph = <p className={['no-margin-text']}>Нет добавленных элементов</p>;
+    const isValueValid = value.length < 3;
+    const listParagraph = <p className={'no-margin-text'}>Нет добавленных элементов</p>;
 
     const onInputButtonClick = () => {
         const promptValue = prompt('Введите новое значение');
